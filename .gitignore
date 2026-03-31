@@ -1,0 +1,100 @@
+# ============================================================
+#  .gitignore — P&C Claims Affordability Analysis
+# ============================================================
+
+# ------------------------------------------------------------
+# RAW DATA — never commit source data files
+# The CAS CSV must be downloaded separately (see README)
+# ------------------------------------------------------------
+data/raw/
+data/processed/*.csv
+data/processed/*.xlsx
+
+# Keep the folder structure but not the files
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ------------------------------------------------------------
+# DATABASE CREDENTIALS — never commit passwords
+# ------------------------------------------------------------
+.env
+db_config.R
+db_config.py
+*.credentials
+config/secrets.yml
+
+# ------------------------------------------------------------
+# R
+# ------------------------------------------------------------
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+# R package cache
+renv/library/
+renv/local/
+renv/lock/
+packrat/lib/
+packrat/src/
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+ENV/
+.env/
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg-info/
+dist/
+build/
+.ipynb_checkpoints/
+# Jupyter notebook outputs (optional — remove this line
+# if you WANT notebook outputs committed)
+# *.ipynb    <- leave commented; commit notebooks with outputs
+
+# ------------------------------------------------------------
+# MySQL / database
+# ------------------------------------------------------------
+*.sql.bak
+*.dump
+*.db
+mysql_error.log
+
+# ------------------------------------------------------------
+# Operating system files
+# ------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ------------------------------------------------------------
+# IDE / editor files
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------
+# Output files (charts saved locally, not committed)
+# ------------------------------------------------------------
+outputs/charts/*.png
+outputs/charts/*.pdf
+outputs/charts/*.svg
+
+# Keep the outputs folder itself
+!outputs/charts/.gitkeep
