@@ -112,3 +112,26 @@ reserve inadequacy and recommend immediate remedial action. Three
 consecutive years of crisis at Old American suggests either the actuarial
 warnings were ignored, or no proper rate adequacy review was being
 performed at all.
+
+## Finding 6 — loss development curve confirms classic auto pattern
+
+**What the data shows:**
+At development lag 1, only 38% of ultimate claims costs have been paid.
+By lag 2 this rises to 70.4% — a 32 percentage point jump as
+straightforward claims settle. The curve then flattens, reaching 99.4%
+by lag 10. Average IBNR reserves shrink from 1,775 at lag 1 to just
+5 at lag 10 as uncertainty resolves.
+
+**What it means:**
+The bulk of private passenger auto claims settle within the first two
+years. The remaining 30% take up to 10 years to fully resolve —
+these are complex bodily injury cases, disputed liability claims, and
+litigation. This long tail is why insurers must hold IBNR reserves
+for years after the accident year ends.
+
+**Actuarial implication:**
+This development pattern is the foundation of the chain-ladder method
+used in Phase 3 of this project. By observing how past accident years
+developed from lag 1 through lag 10, we can project how immature
+accident years will develop — and therefore how much reserve the
+insurer needs to hold today to pay tomorrow's claims.
