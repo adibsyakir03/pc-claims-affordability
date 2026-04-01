@@ -135,3 +135,28 @@ used in Phase 3 of this project. By observing how past accident years
 developed from lag 1 through lag 10, we can project how immature
 accident years will develop — and therefore how much reserve the
 insurer needs to hold today to pay tomorrow's claims.
+
+## Finding 7 — chain-ladder link ratios show rapid early development
+
+**What the data shows:**
+Volume-weighted link ratios from the paid loss development triangle:
+- Lag 1 to 2: 1.8246 — claims nearly double in the second year
+- Lag 2 to 3: 1.1823 — further 18% growth
+- Lag 3 onwards: ratios fall rapidly toward 1.000
+- By lag 6 the ratio is 1.0073 — less than 1% growth per year
+
+**What it means:**
+The lag 1 to 2 ratio of 1.8246 is the most critical number in the
+reserving analysis. It means an insurer looking at their year-end
+lag 1 paid losses is only seeing 55 cents of every ultimate claims
+dollar. They must hold reserves for the remaining 45 cents — plus
+all future development beyond lag 2.
+
+**Actuarial implication:**
+These link ratios are the direct input to the chain-ladder IBNR
+calculation performed in Phase 3 of this project using R. Multiplied
+together they produce the Cumulative Development Factor — the number
+by which current paid losses are multiplied to project ultimate cost.
+A lag 1 CDF of approximately 2.6 means current paid losses represent
+only about 38% of ultimate — consistent with the 38% figure observed
+in the C1 development curve query.

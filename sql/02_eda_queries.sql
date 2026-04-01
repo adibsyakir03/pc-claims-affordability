@@ -123,15 +123,15 @@ SELECT
     GRCODE,
     GRNAME,
     AccidentYear,
-    EarnedPremNet_B                                 AS net_premium,
-    CumPaidLoss_B                                   AS paid_losses,
+    EarnedPremNet_B                                  AS net_premium,
+    CumPaidLoss_B                                    AS paid_losses,
     ROUND(CumPaidLoss_B
-        / NULLIF(EarnedPremNet_B, 0) * 100, 1)      AS paid_loss_ratio_pct,
-    CumPaidLoss_B - EarnedPremNet_B                 AS surplus_deficit
+        / NULLIF(EarnedPremNet_B, 0) * 100, 1)       AS paid_loss_ratio_pct,
+    CumPaidLoss_B - EarnedPremNet_B                  AS surplus_deficit
 FROM ppauto
 WHERE Single = 1
 AND EarnedPremNet_B > 0
-AND DevelopmentLag = 120
+AND DevelopmentLag = 10
 AND CumPaidLoss_B / EarnedPremNet_B > 0.90
 ORDER BY paid_loss_ratio_pct DESC
 LIMIT 20;
