@@ -59,6 +59,9 @@ the emerging deterioration before it became a crisis. Early warning through
 loss ratio monitoring is one of the primary tools a P&C actuarial analyst
 uses to protect company solvency.
 
+
+## Finding 4 — 1 in 8 insurer-years show affordability failure
+
 **What the data shows:**
 Of 900 insurer-year observations at full development, 71 (7.9%) show
 a paid loss ratio over 100% — meaning claims exceeded premium collected.
