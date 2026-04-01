@@ -10,11 +10,9 @@ USE cas_pc_analysis;
 
 -- ============================================================
 -- SECTION A — PORTFOLIO OVERVIEW
--- Get a feel for the size and shape of the book
 -- ============================================================
 
 -- A1. Total premium and claims across all years
--- This is the 30,000 foot view of the entire dataset
 SELECT
     SUM(EarnedPremNet_B)            AS total_earned_premium,
     SUM(CumPaidLoss_B)              AS total_paid_losses,
@@ -33,15 +31,15 @@ AND EarnedPremNet_B > 0;
 -- Are premiums growing or shrinking over time?
 SELECT
     AccidentYear,
-    COUNT(DISTINCT GRCODE)                          AS active_insurers,
-    SUM(EarnedPremNet_B)                            AS total_net_premium,
-    SUM(CumPaidLoss_B)                              AS total_paid_losses,
+    COUNT(DISTINCT GRCODE)                           AS active_insurers,
+    SUM(EarnedPremNet_B)                             AS total_net_premium,
+    SUM(CumPaidLoss_B)                               AS total_paid_losses,
     ROUND(SUM(CumPaidLoss_B)
-        / NULLIF(SUM(EarnedPremNet_B), 0) * 100, 1) AS paid_loss_ratio_pct
+        / NULLIF(SUM(EarnedPremNet_B), 0) * 100, 1)  AS paid_loss_ratio_pct
 FROM ppauto
 WHERE Single = 1
 AND EarnedPremNet_B > 0
-AND DevelopmentLag = 120        -- use fully developed lag for fair comparison
+AND DevelopmentLag = 10
 GROUP BY AccidentYear
 ORDER BY AccidentYear;
 
@@ -51,17 +49,26 @@ ORDER BY AccidentYear;
 SELECT
     GRCODE,
     GRNAME,
-    SUM(EarnedPremNet_B)                            AS total_net_premium,
-    SUM(CumPaidLoss_B)                              AS total_paid_losses,
+    SUM(EarnedPremNet_B)                             AS total_net_premium,
+    SUM(CumPaidLoss_B)                               AS total_paid_losses,
     ROUND(SUM(CumPaidLoss_B)
-        / NULLIF(SUM(EarnedPremNet_B), 0) * 100, 1) AS paid_loss_ratio_pct
+        / NULLIF(SUM(EarnedPremNet_B), 0) * 100, 1)  AS paid_loss_ratio_pct
 FROM ppauto
 WHERE Single = 1
 AND EarnedPremNet_B > 0
-AND DevelopmentLag = 120
+AND DevelopmentLag = 10
 GROUP BY GRCODE, GRNAME
 ORDER BY total_net_premium DESC
 LIMIT 10;
+
+SELECT 
+    AccidentYear,
+    MAX(DevelopmentLag) AS max_lag
+FROM ppauto
+WHERE Single = 1
+AND EarnedPremNet_B > 0
+GROUP BY AccidentYear
+ORDER BY AccidentYear;
 
 
 -- ============================================================
@@ -84,7 +91,7 @@ SELECT
 FROM ppauto
 WHERE Single = 1
 AND EarnedPremNet_B > 0
-AND DevelopmentLag = 120
+AND DevelopmentLag = 10
 GROUP BY AccidentYear
 ORDER BY AccidentYear;
 
@@ -99,13 +106,13 @@ SELECT
         WHEN CumPaidLoss_B / EarnedPremNet_B < 0.85  THEN '70% to 85%'
         WHEN CumPaidLoss_B / EarnedPremNet_B < 1.00  THEN '85% to 100%'
         ELSE 'Over 100%'
-    END                                              AS loss_ratio_bucket,
-    COUNT(*)                                         AS insurer_count,
+    END                                               AS loss_ratio_bucket,
+    COUNT(*)                                          AS insurer_count,
     ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER(), 1) AS pct_of_total
 FROM ppauto
 WHERE Single = 1
 AND EarnedPremNet_B > 0
-AND DevelopmentLag = 120
+AND DevelopmentLag = 10
 GROUP BY loss_ratio_bucket
 ORDER BY MIN(CumPaidLoss_B / EarnedPremNet_B);
 

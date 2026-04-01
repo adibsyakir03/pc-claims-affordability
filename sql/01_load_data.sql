@@ -124,3 +124,5 @@ SELECT
     SUM(EarnedPremNet_B <= 0)       AS zero_or_neg_premium
 FROM ppauto
 GROUP BY Single;
+
+## SAVE AND COMMIT

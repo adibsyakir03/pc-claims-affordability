@@ -58,3 +58,22 @@ optional. An actuary reviewing the 2001 or 2004 book should have flagged
 the emerging deterioration before it became a crisis. Early warning through
 loss ratio monitoring is one of the primary tools a P&C actuarial analyst
 uses to protect company solvency.
+
+**What the data shows:**
+Of 900 insurer-year observations at full development, 71 (7.9%) show
+a paid loss ratio over 100% — meaning claims exceeded premium collected.
+A further 69 (7.7%) sit in the 85–100% warning zone. Combined, 15.6%
+of all observations show serious financial stress.
+
+**What it means:**
+Nearly 1 in 6 insurer-years in this dataset represents a company that
+could not comfortably fund its claims from premium alone in that year.
+The largest group — 35.6% — sits in the healthy 55–70% band, suggesting
+the majority of the market is well-run, but a significant minority
+is consistently under financial pressure.
+
+**Actuarial implication:**
+The 71 over-100% observations are the core subject of this project's
+affordability analysis. These are the companies where premium intake
+was genuinely insufficient to fund claim obligations — the exact
+scenario that actuarial pricing and reserving work is designed to prevent.
