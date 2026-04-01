@@ -173,9 +173,11 @@ the standard benchmark dataset for loss reserving studies.
 
 ## Author
 
-**[Your Name]**  
+**Adib Syakir**  
 Aspiring Actuarial Analyst  
-[LinkedIn] | [Email]
+www.linkedin.com/in/
+adib-syakir-b05605336
+ | adibsyakir03@gmail.com
 
 ---
 
