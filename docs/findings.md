@@ -37,3 +37,24 @@ A loss ratio of 75.8% before expenses leaves very little margin.
 Adding a typical 28% expense ratio produces a combined ratio of
 over 100% — meaning Usauto is likely loss-making on an underwriting
 basis and relying on investment income to stay solvent.
+
+## Finding 3 — 2002 and 2005 were industry-wide affordability failures
+
+**What the data shows:**
+In 2002 the industry average paid loss ratio hit 100.1% and in 2005 it
+reached 102.3%. Individual insurers reached loss ratios as high as 2,264%
+in 2002 and 3,300% in 2005.
+
+**What it means:**
+In these two years the average US private passenger auto insurer paid out
+more in claims than it collected in premium — before accounting for any
+operating expenses. This is a direct affordability failure. The extreme
+maximum values indicate individual insurers in severe financial distress,
+likely insolvent or in run-off.
+
+**Actuarial implication:**
+These years demonstrate why reserve adequacy and rate monitoring are not
+optional. An actuary reviewing the 2001 or 2004 book should have flagged
+the emerging deterioration before it became a crisis. Early warning through
+loss ratio monitoring is one of the primary tools a P&C actuarial analyst
+uses to protect company solvency.
