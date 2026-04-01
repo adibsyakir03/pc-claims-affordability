@@ -80,3 +80,35 @@ The 71 over-100% observations are the core subject of this project's
 affordability analysis. These are the companies where premium intake
 was genuinely insufficient to fund claim obligations — the exact
 scenario that actuarial pricing and reserving work is designed to prevent.
+
+## Finding 5 — individual insurers in extreme distress
+
+**What the data shows:**
+The 20 most distressed insurer-years show loss ratios ranging from
+128.8% to 3,300%. The standout cases are:
+
+- First American Specialty Ins Co (2005): loss ratio of 3,300% —
+  paid $132 in claims for every $4 of premium collected
+- First Amer Ins Co (2002): loss ratio of 2,264%
+- Old American Cty Mut Fire Ins Co: appeared three consecutive years
+  (2001, 2002, 2003) with loss ratios of 165%, 796% and 184%
+- Dorinco Rein Co (1999): the largest insurer by premium volume in
+  the entire dataset, yet recorded the biggest absolute deficit —
+  $22.4 million more paid out in claims than collected in premium
+
+**What it means:**
+Dorinco Rein Co is the most striking case. It was simultaneously the
+largest insurer by premium volume in the dataset and the company with
+the biggest absolute claims deficit in 1999. Size did not protect it.
+Old American Cty Mut Fire Ins Co failing for three consecutive years
+points to a structural pricing problem — not bad luck, but a
+fundamentally broken underwriting model that went uncorrected.
+
+**Actuarial implication:**
+These cases represent exactly the scenario reserving actuaries are
+employed to prevent. An appointed actuary reviewing Dorinco or Old
+American's books would have been required under NAIC standards to flag
+reserve inadequacy and recommend immediate remedial action. Three
+consecutive years of crisis at Old American suggests either the actuarial
+warnings were ignored, or no proper rate adequacy review was being
+performed at all.
