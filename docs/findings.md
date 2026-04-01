@@ -19,3 +19,21 @@ run a rate adequacy test on the 1998–1999 book, the indicated rate change
 would have been significantly positive. The market correction from 2001
 onwards — where rates were raised and loss ratios fell — confirms that
 pricing discipline, not luck, drives long-term solvency.
+
+## Finding 2 — top 10 insurers show wide performance spread
+
+**What the data shows:**
+Among the 10 largest insurers by net earned premium, paid loss ratios
+range from 50.9% (Pioneer State Mut) to 75.8% (Usauto Ins Co) —
+a 25 percentage point spread.
+
+**What it means:**
+The market is not uniform. Some insurers are pricing and underwriting
+conservatively while others are taking on more risk. Usauto Ins Co
+is the most exposed of the large players.
+
+**Actuarial implication:**
+A loss ratio of 75.8% before expenses leaves very little margin.
+Adding a typical 28% expense ratio produces a combined ratio of
+over 100% — meaning Usauto is likely loss-making on an underwriting
+basis and relying on investment income to stay solvent.
