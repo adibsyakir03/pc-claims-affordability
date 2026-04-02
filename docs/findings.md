@@ -160,3 +160,38 @@ by which current paid losses are multiplied to project ultimate cost.
 A lag 1 CDF of approximately 2.6 means current paid losses represent
 only about 38% of ultimate — consistent with the 38% figure observed
 in the C1 development curve query.
+
+## Finding 8 — 71 confirmed affordability failures across 10 years
+
+**What the data shows:**
+71 insurer-year combinations show paid losses exceeding net earned
+premium — a direct affordability failure. Key findings:
+
+- New Jersey Citizens United was in deficit for 7 consecutive years
+  (2001–2007) — the longest sustained failure in the dataset
+- Pacific Ind Ins Co was in deficit for 6 years (1998–2003)
+- Interboro Mut Ind Ins Co and IFA Ins Co each failed for 4 years
+- Old American Cty Mut Fire Ins Co failed for 5 consecutive years
+- Dorinco Rein Co accumulated a $41 million absolute deficit across
+  1999 and 2000 alone
+- Deficit insurers peaked at 14 in year 2000 and 13 in 2002 —
+  directly corresponding to the industry crisis years identified
+  in Finding 3
+
+**What it means:**
+The repeat offenders are the most alarming finding. A single bad year
+can be explained by an unexpected spike in claims. But 4, 5, 6 or 7
+consecutive years of paying out more than you collect is a fundamental
+business model failure. These companies were structurally underpricing
+their policies year after year.
+
+**Actuarial implication:**
+New Jersey Citizens United in deficit for 7 straight years is the
+clearest example of what happens when rate adequacy monitoring fails.
+An annual actuarial review would have flagged the inadequacy after
+year 1. The fact that it continued for 7 years suggests either the
+actuarial advice was ignored, or the reviews were not being performed
+to the required standard. This is the core business case for rigorous
+P&C actuarial analysis.
+```
+
