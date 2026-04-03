@@ -192,15 +192,15 @@ SELECT
     GRCODE,
     GRNAME,
     AccidentYear,
-    EarnedPremNet_B                                 AS net_premium,
-    CumPaidLoss_B                                   AS paid_losses,
-    CumPaidLoss_B - EarnedPremNet_B                 AS deficit,
+    EarnedPremNet_B                                  AS net_premium,
+    CumPaidLoss_B                                    AS paid_losses,
+    CumPaidLoss_B - EarnedPremNet_B                  AS deficit,
     ROUND(CumPaidLoss_B
-        / NULLIF(EarnedPremNet_B, 0) * 100, 1)      AS loss_ratio_pct
+        / NULLIF(EarnedPremNet_B, 0) * 100, 1)       AS loss_ratio_pct
 FROM ppauto
 WHERE Single = 1
 AND EarnedPremNet_B > 0
-AND DevelopmentLag = 120
+AND DevelopmentLag = 10
 AND CumPaidLoss_B > EarnedPremNet_B
 ORDER BY deficit DESC;
 
@@ -216,9 +216,10 @@ SELECT
 FROM ppauto
 WHERE Single = 1
 AND EarnedPremNet_B > 0
-AND DevelopmentLag = 12         -- early development — most uncertainty here
+AND DevelopmentLag = 1        -- early development — most uncertainty here
 GROUP BY AccidentYear
 ORDER BY AccidentYear;
+
 
 
 -- D3. Summary affordability scorecard per insurer
@@ -248,6 +249,6 @@ SELECT
 FROM ppauto
 WHERE Single = 1
 AND EarnedPremNet_B > 0
-AND DevelopmentLag = 120
+AND DevelopmentLag = 10
 GROUP BY GRCODE, GRNAME
 ORDER BY overall_paid_lr DESC;

@@ -253,3 +253,26 @@ answer is definitively no. For 10 more the answer is — not comfortably.
 The R analysis in Phase 3 will refine this further by projecting
 ultimate losses using the chain-ladder method, giving a more precise
 picture of true reserve adequacy.
+
+## Finding 11 — crisis years differ by scale of impact
+
+**What the data shows:**
+When measuring affordability by total industry premium vs total claims,
+only 1999 and 2000 show an industry-level funding deficit. However when
+measuring by simple average loss ratio per insurer, 2002 and 2005 also
+appear as crisis years.
+
+**What it means:**
+The 1999–2000 crisis was systemic — it affected large and small insurers
+alike, producing an industry-wide funding deficit when all premium is
+aggregated. The 2002 and 2005 deterioration was concentrated in smaller
+insurers. Large insurers like Dorinco Rein Co ($871M premium) remained
+adequately funded in those years, masking the distress of smaller players
+in the aggregate totals.
+
+**Actuarial implication:**
+This distinction matters for regulation and supervision. A systemic crisis
+requires market-wide intervention — rate filings, reserve requirements
+across all carriers. A concentrated crisis requires targeted supervision
+of specific companies. The SQL analysis reveals both types occurred in
+this dataset, in different years.
