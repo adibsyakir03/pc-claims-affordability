@@ -276,3 +276,31 @@ requires market-wide intervention — rate filings, reserve requirements
 across all carriers. A concentrated crisis requires targeted supervision
 of specific companies. The SQL analysis reveals both types occurred in
 this dataset, in different years.
+
+## Finding 12 — industry funding deficit peaked at $66 million in 2000
+
+**What the data shows:**
+In dollar terms the industry funding deficit peaked at -$66.3 million
+in 2000 (-9.7% of premium) after a -$22.1 million deficit in 1999.
+2002 was a near-miss at only +$10.1 million surplus — a 1.2% margin
+on $837 million of premium. The recovery was dramatic — by 2004 the
+industry surplus had reached +$92 million (+9.7%) and remained above
++$77 million through 2007.
+
+**What it means:**
+The $66 million deficit in 2000 represents real money that had to come
+from somewhere other than premium — investment income, existing reserves,
+or capital from shareholders. The 2002 near-miss shows the market had
+not fully corrected after the first crisis. Only from 2004 onwards did
+the industry achieve a comfortable and sustained funding surplus.
+
+**Actuarial implication:**
+The 1.2% surplus margin in 2002 is below any reasonable actuarial
+safety loading. Standard actuarial practice targets a profit margin
+of 4–6% after claims and expenses. A 1.2% margin provides almost no
+buffer against adverse claims development, a catastrophe event, or
+an economic downturn. This is what inadequate rate monitoring looks
+like in practice.
+
+**The underwriting cycle — why premiums rise and fall?**
+In the late 1990s insurers competed aggressively for customers by cutting premiums, planting the seeds of the 1999–2000 crisis. When claims costs rose, insurers could not respond immediately — US rate increases require regulatory approval, meaning companies were locked into yesterday's prices while paying today's costs. Recovery began in 2001 as rate increases were approved and underwriting standards tightened, but the full correction only came through in 2004 when revised rates had been earned across the entire book. The sustained surplus from 2004 to 2007 represents a well-functioning market at adequate rates — and illustrates why annual actuarial rate reviews matter. It took five years to recover from two years of underpricing.
