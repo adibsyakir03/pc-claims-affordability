@@ -79,8 +79,36 @@ The "lower triangle" (actual outcomes) is used to validate your model.
 
 ---
 
+## Analytical assumptions
+
+### Expense ratio assumption — 28.5%
+
+All affordability queries in `03_affordability.sql` apply an expense
+load of **28.5% of net earned premium** to estimate operating costs.
+
+This is composed of:
+- Fixed expense ratio (FER): 16.0% — staff, rent, technology, overhead
+- Variable expense ratio (VER): 12.5% — agent commissions, premium tax
+
+**Source:** This assumption is consistent with the US private passenger
+auto insurance industry average expense ratios published in the NAIC
+Insurance Expense Exhibit and referenced in CAS Exam 5 study materials.
+Individual insurers will vary — some large direct writers operate below
+25%, while smaller regional insurers may exceed 35%.
+
+**Sensitivity:** The stress test in Section D of `03_affordability.sql`
+tests a +15% claims shock. A separate sensitivity on the expense
+assumption is recommended — increasing expenses to 32% would reduce
+the surplus by approximately 3.5 percentage points across all years.
+
+---
+
 ## References
 
 - Meyers, G. & Shi, P. (2011). *Loss Reserving Data Pulled from NAIC Schedule P.* CAS.
 - CAS Exam 5 Study Note: Basic Ratemaking and Estimation of Claim Liabilities.
 - Friedland, J. (2010). *Estimating Unpaid Claims Using Basic Techniques.* CAS.
+
+
+
+
