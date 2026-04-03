@@ -193,5 +193,26 @@ year 1. The fact that it continued for 7 years suggests either the
 actuarial advice was ignored, or the reviews were not being performed
 to the required standard. This is the core business case for rigorous
 P&C actuarial analysis.
-```
 
+## Finding 9 — IBNR uncertainty peaked in 2003 following the crisis years
+
+**What the data shows:**
+At lag 1, IBNR reserves as a percentage of total incurred losses
+ranged from 22.0% (2000) to 30.1% (2003). The 2003 peak represents
+the highest reserve uncertainty in the entire dataset. Total IBNR
+held across the industry rose from $129 million in 1998 to $187
+million in 2003 before gradually declining.
+
+**What it means:**
+The 2003 IBNR peak is a direct consequence of the 2002 crisis year.
+After experiencing severe adverse loss development, insurers
+strengthened their reserves — holding more IBNR as a buffer against
+further deterioration. This is standard actuarial practice following
+a period of adverse experience.
+
+**Actuarial implication:**
+Rising IBNR percentages are an early warning signal. The climb from
+23.4% in 1998 to 25.0% in 2001 and 2002 — before the 2003 peak —
+shows the stress building in the system before it became fully visible
+in paid loss ratios. A reserving actuary monitoring IBNR trends would
+have seen this warning signal emerging from 2001 onwards.
