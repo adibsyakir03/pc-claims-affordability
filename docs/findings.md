@@ -216,3 +216,40 @@ Rising IBNR percentages are an early warning signal. The climb from
 shows the stress building in the system before it became fully visible
 in paid loss ratios. A reserving actuary monitoring IBNR trends would
 have seen this warning signal emerging from 2001 onwards.
+
+## Finding 10 — affordability scorecard: 2 insurers in structural deficit
+
+**What the data shows:**
+Across all 101 single-entity insurers over their full operating history
+in the dataset:
+
+- 2 insurers (2.0%) are in structural DEFICIT — paying out more in
+  claims than they collected in premium over their entire history
+- 10 insurers (9.9%) are AT RISK — overall loss ratio between
+  85% and 100%
+- 26 insurers (25.7%) are on WATCH — loss ratio between 70% and 85%
+- 63 insurers (62.4%) are ADEQUATE — loss ratio below 70%
+
+Old American Cty Mut Fire Ins Co has the worst overall record at
+140.7% — paying $1.41 in claims for every $1 of premium collected
+across 7 years. New Jersey Citizens United follows at 108.6% across
+a full 10 years.
+
+At the other extreme, Atlantic Cas Ins Co shows a 6.0% loss ratio —
+the lowest in the dataset — suggesting either extremely conservative
+underwriting or a very low-claims niche book.
+
+**What it means:**
+While 62.4% of insurers are adequately funded, nearly 1 in 8 (12%)
+are either in deficit or at serious risk. When combined with the WATCH
+category, 37.6% of insurers show some degree of affordability concern
+over their operating history.
+
+**Actuarial implication:**
+This scorecard is the summary output of the entire SQL analysis. It
+answers the core business question of this project: can these insurers
+pay their claims from current premium intake? For 2 companies the
+answer is definitively no. For 10 more the answer is — not comfortably.
+The R analysis in Phase 3 will refine this further by projecting
+ultimate losses using the chain-ladder method, giving a more precise
+picture of true reserve adequacy.
