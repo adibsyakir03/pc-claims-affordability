@@ -441,3 +441,42 @@ adverse scenario. This is the quantitative case for why pricing
 actuaries target a profit margin above zero — not for shareholder
 profit, but as a buffer against the inevitable uncertainty in claims
 development.
+
+## Finding 17 — only 1 in 3 insurers can withstand a 15% severity shock
+
+**What the data shows:**
+Under a +15% severity stress scenario applied at the insurer level:
+- 30 insurers (29.7%) fail both base and stress test
+- 36 insurers (35.6%) pass the base test but fail under stress
+- 35 insurers (34.7%) pass both base and stress
+
+Dorinco Rein Co — the largest insurer by premium — passes the base
+test with a $6,467 surplus but fails stress with a -$86,082 deficit.
+A 15% shock on its $871 million premium base exposes how thin its
+margin truly is. At the other extreme, Home State Cnty Mut Ins Co
+passes stress with a $49,057 surplus — the most resilient position
+in the dataset.
+
+**Assumptions used:**
+Stress scenario applies +15% to cumulative paid claims at lag 10 for
+each insurer individually. Expenses remain at 28.5% of premium.
+Results are based on the full 10-year operating history per insurer.
+A company passes stress only if its stressed surplus remains positive.
+
+**What it means:**
+65.3% of US private passenger auto insurers in this dataset cannot
+absorb a moderate severity shock without falling into deficit. This
+is not a tail risk scenario — a 15% claims increase is within the
+range of normal adverse experience. The 41 insurers in the middle
+category are particularly exposed — they appear healthy under normal
+conditions but have no real buffer against adversity.
+
+**Actuarial implication:**
+This stress test result is the final and most important output of the
+SQL analysis. It answers the project's core question definitively —
+most of these insurers cannot reliably pay their claims under adverse
+but realistic conditions. The solution is not complicated: adequate
+pricing, monitored annually through loss ratio and combined ratio
+analysis, with explicit stress testing built into every rate review.
+That is precisely what this project demonstrates using real regulatory
+data from 101 US insurers over 10 years.
