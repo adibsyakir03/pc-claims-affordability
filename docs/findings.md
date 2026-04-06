@@ -372,3 +372,36 @@ have a combined ratio above 85%, meaning they have limited or no buffer
 against adverse claims development. Only Pioneer State Mut (79.4%),
 Pacific Specialty (70.4%), and a handful of others operate with a
 genuinely comfortable margin.
+
+## Finding 15 — the lag 1 vs lag 10 reversal: the core reserving problem
+
+**What the data shows:**
+Comparing ultimate affordability at lag 1 vs lag 10 reveals a dramatic
+reversal for the crisis years:
+
+- 1999: lag 1 surplus of +$188,364 → lag 10 shortfall of -$22,690
+- 2000: lag 1 surplus of +$165,331 → lag 10 shortfall of -$66,471
+- 2002: lag 1 surplus of +$207,189 → lag 10 residual of only +$9,981
+
+Combined, 1999 and 2000 swung from an apparent surplus of $353 million
+to a combined deficit of $89 million as claims fully developed over
+10 years.
+
+**What it means:**
+At the point when insurers were setting their 1999 and 2000 reserves,
+every signal said the book was adequately funded. The deficit only
+became visible years later as claims developed beyond initial estimates.
+This is not hindsight — it is the fundamental challenge of insurance
+reserving. You are always pricing and reserving for the future using
+incomplete information from the present.
+
+**Actuarial implication:**
+This finding is the clearest justification for the actuarial profession
+in this dataset. The chain-ladder and Bornhuetter-Ferguson methods used
+in Phase 3 of this project exist precisely to detect this kind of
+emerging inadequacy before it becomes a crisis. Had an actuary applied
+these methods to the 1998 and 1999 development data, the accelerating
+link ratios would have signalled that reserves were insufficient — while
+there was still time to raise rates and strengthen reserves. The $89
+million combined deficit was not inevitable. It was the cost of
+inadequate actuarial monitoring.
