@@ -405,3 +405,39 @@ link ratios would have signalled that reserves were insufficient — while
 there was still time to raise rates and strengthen reserves. The $89
 million combined deficit was not inevitable. It was the cost of
 inadequate actuarial monitoring.
+
+## Finding 16 — 9 out of 10 years fail a 15% severity stress test
+
+**What the data shows:**
+Applying a +15% severity shock to paid claims, only 2004 passes the
+stress test — with a stressed surplus of just $3,637 thousand on
+$953 million of premium (0.4% margin). Every other year fails,
+with stressed deficits ranging from -$5,458 (2006) to -$149,757
+(2000). The two years already in base deficit — 1999 and 2000 —
+deepen to -$100,381 and -$149,757 respectively under stress.
+
+**Assumptions used:**
+The stress scenario applies a uniform +15% increase to cumulative
+paid claims at lag 10. Expenses remain unchanged at 28.5% of premium.
+This represents a moderate adverse scenario consistent with regulatory
+stress testing frameworks — not an extreme tail event. A 15% severity
+increase could result from repair cost inflation, rising bodily injury
+award sizes, or a spike in accident frequency.
+
+**What it means:**
+The entire decade of US private passenger auto insurance was fragile
+under even moderate stress. Years with comfortable base surpluses —
+2005 at +$77.6M, 2006 at +$94M, 2007 at +$81.5M — all flipped to
+deficit under a 15% shock. This confirms that the industry was
+operating with insufficient safety margins throughout the period,
+even during the apparent recovery years of 2004–2007.
+
+**Actuarial implication:**
+Standard actuarial practice requires insurers to hold a risk margin
+above the best estimate of claims — typically 4–6% of premium for
+private passenger auto. The stress test results show that in most
+years the industry surplus was insufficient to absorb even a moderate
+adverse scenario. This is the quantitative case for why pricing
+actuaries target a profit margin above zero — not for shareholder
+profit, but as a buffer against the inevitable uncertainty in claims
+development.
