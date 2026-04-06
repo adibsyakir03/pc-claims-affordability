@@ -333,12 +333,12 @@ When operating expenses (28.5% of premium) are added to paid claims,
 the affordability picture changes dramatically:
 - 14 insurers (13.9%) — Severe Deficit: combined ratio over 110%
 - 16 insurers (15.8%) — Deficit: combined ratio 100% to 110%
-- 12 insurers (11.9%) — At Risk: combined ratio 95% to 100%
-- 36 insurers (35.6%) — Watch: combined ratio 85% to 95%
-- 23 insurers (22.8%) — Solvent: combined ratio below 85%
+- 13 insurers (12.9%) — At Risk: combined ratio 95% to 100%
+- 37 insurers (36.6%) — Watch: combined ratio 85% to 95%
+- 21 insurers (20.8%) — Solvent: combined ratio below 85%
 
 Old American Cty Mut Fire Ins Co has the worst combined ratio at 169.2%.
-Only 23 of 101 insurers — fewer than 1 in 4 — are genuinely solvent
+Only 21 of 101 insurers — fewer than 1 in 5 — are genuinely solvent
 when both claims and operating expenses are accounted for.
 
 **Assumptions used:**
