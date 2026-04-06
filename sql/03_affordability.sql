@@ -196,6 +196,37 @@ AND DevelopmentLag = 1          -- lag 1: maximum uncertainty, highest IBNR
 GROUP BY AccidentYear
 ORDER BY AccidentYear;
 
+SELECT
+    AccidentYear,
+    ROUND(SUM(EarnedPremNet_B), 0)                  AS earned_premium,
+    ROUND(SUM(CumPaidLoss_B), 0)                    AS paid_claims,
+    ROUND(SUM(BulkLoss_B), 0)                       AS ibnr_reserves,
+    ROUND(SUM(EarnedPremNet_B) * 0.285, 0)          AS expenses,
+    -- Total ultimate obligation
+    ROUND(SUM(CumPaidLoss_B)
+        + SUM(BulkLoss_B)
+        + SUM(EarnedPremNet_B) * 0.285, 0)          AS total_ultimate_obligation,
+    -- Can premium fund everything?
+    ROUND(SUM(EarnedPremNet_B)
+        - SUM(CumPaidLoss_B)
+        - SUM(BulkLoss_B)
+        - SUM(EarnedPremNet_B) * 0.285, 0)          AS residual_after_all,
+    CASE
+        WHEN SUM(EarnedPremNet_B)
+            >= SUM(CumPaidLoss_B)
+            + SUM(BulkLoss_B)
+            + SUM(EarnedPremNet_B) * 0.285
+        THEN 'FULLY FUNDED'
+        ELSE 'SHORTFALL'
+    END                                             AS ultimate_affordability
+FROM ppauto
+WHERE Single = 1
+AND EarnedPremNet_B > 0
+AND DevelopmentLag = 10          -- lag 10: final state, ibnrr payed
+GROUP BY AccidentYear
+ORDER BY AccidentYear;
+
+
 
 -- ============================================================
 -- SECTION D — STRESS TEST
@@ -269,3 +300,44 @@ AND EarnedPremNet_B > 0
 AND DevelopmentLag = 10
 GROUP BY GRCODE, GRNAME
 ORDER BY stressed_surplus_deficit ASC;
+
+## Double Check
+SELECT
+    stress_test_result,
+    COUNT(*)                                        AS insurer_count,
+    ROUND(COUNT(*) * 100.0
+        / SUM(COUNT(*)) OVER(), 1)                  AS pct_of_total
+FROM (
+    SELECT
+        GRCODE,
+        CASE
+            WHEN SUM(EarnedPremNet_B)
+                >= SUM(CumPaidLoss_B)
+                + SUM(EarnedPremNet_B) * 0.285
+            AND SUM(EarnedPremNet_B)
+                >= SUM(CumPaidLoss_B) * 1.15
+                + SUM(EarnedPremNet_B) * 0.285
+            THEN 'Passes base and stress'
+            WHEN SUM(EarnedPremNet_B)
+                >= SUM(CumPaidLoss_B)
+                + SUM(EarnedPremNet_B) * 0.285
+            AND SUM(EarnedPremNet_B)
+                < SUM(CumPaidLoss_B) * 1.15
+                + SUM(EarnedPremNet_B) * 0.285
+            THEN 'Passes base — fails stress'
+            ELSE 'Fails base and stress'
+        END AS stress_test_result
+    FROM ppauto
+    WHERE Single = 1
+    AND EarnedPremNet_B > 0
+    AND DevelopmentLag = 10
+    GROUP BY GRCODE
+) AS stress_summary
+GROUP BY stress_test_result
+ORDER BY MIN(
+    CASE stress_test_result
+        WHEN 'Fails base and stress'    THEN 1
+        WHEN 'Passes base — fails stress' THEN 2
+        ELSE 3
+    END
+);
