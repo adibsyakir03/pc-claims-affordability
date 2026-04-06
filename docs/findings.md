@@ -503,3 +503,39 @@ beyond lag 10. For a private passenger auto book this is minimal,
 consistent with the short-tailed nature of the line. The chain-ladder
 method would produce material IBNR estimates on longer-tailed lines
 such as general liability or medical malpractice.
+
+## Finding 19 — BF method confirms 1998–2000 reserve inadequacy
+
+**What the data shows:**
+The Bornhuetter-Ferguson method, applied to the upper triangle as
+at year-end 2004 with an a priori loss ratio of 72.7%, produces
+the following IBNR estimates for AY1998–2003:
+
+- AY1998: BF IBNR = 319,598 — INADEQUATE (37.8% developed)
+- AY1999: BF IBNR = 144,491 — INADEQUATE (71.6% developed)
+- AY2000: BF IBNR = 69,541 — INADEQUATE (86.0% developed)
+- AY2001: BF IBNR = 36,288 — ADEQUATE
+- AY2002: BF IBNR = 15,233 — ADEQUATE
+- AY2003: BF IBNR = 5,271 — ADEQUATE
+
+Total BF IBNR across AY1998–2003: 590,422
+
+**Assumptions used:**
+A priori expected loss ratio of 72.7% — the simple average of
+fully developed paid loss ratios for AY1998–2001. Upper triangle
+constructed as at year-end 2004. AY2005–2007 excluded as no paid
+loss data exists at the valuation date.
+
+**What it means:**
+The BF method independently confirms what the SQL affordability
+analysis found — 1998, 1999 and 2000 were inadequately reserved.
+The two methods use completely different approaches yet reach the
+same conclusion, which strengthens the finding considerably.
+
+**Actuarial implication:**
+The BF method is preferred over chain-ladder for immature years
+because it blends actual development with expected losses rather
+than extrapolating purely from sparse early data. The fact that
+both methods flag 1998–2000 as inadequate — using different
+mathematical approaches — makes this one of the strongest
+findings in the project.
