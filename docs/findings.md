@@ -62,6 +62,19 @@ uses to protect company solvency.
 
 ## Finding 4 — 1 in 8 insurer-years show affordability failure
 
+**Assumptions used:**
+Loss ratio buckets are based on paid loss ratio only — no expense load.
+Bucket boundaries follow standard P&C actuarial convention:
+- Below 55% — unusually low, possible under-reserving or niche low-risk book
+- 55% to 70% — healthy range for US private passenger auto
+- 70% to 85% — acceptable but leaves limited margin after expenses
+- 85% to 100% — warning zone, combined ratio likely exceeds 100%
+  once expenses are added
+- Over 100% — loss ratio alone exceeds premium, direct affordability
+  failure before expenses are considered
+These thresholds are consistent with US auto industry benchmarks
+published in the NAIC Annual Report and AM Best industry aggregates.
+
 **What the data shows:**
 Of 900 insurer-year observations at full development, 71 (7.9%) show
 a paid loss ratio over 100% — meaning claims exceeded premium collected.
@@ -219,6 +232,14 @@ have seen this warning signal emerging from 2001 onwards.
 
 ## Finding 10 — affordability scorecard: 2 insurers in structural deficit
 
+**Assumptions used:**
+Affordability flags are based on the overall paid loss ratio across
+all active years, without expense loading. Thresholds applied:
+- Over 100% — DEFICIT: paid claims exceed premium collected
+- 85% to 100% — AT RISK: no margin remaining after adding expenses
+- 70% to 85% — WATCH: funded on claims but tight once expenses added
+- Below 70% — ADEQUATE: sufficient margin to cover claims and expenses
+
 **What the data shows:**
 Across all 101 single-entity insurers over their full operating history
 in the dataset:
@@ -304,3 +325,50 @@ like in practice.
 
 **The underwriting cycle — why premiums rise and fall?**
 In the late 1990s insurers competed aggressively for customers by cutting premiums, planting the seeds of the 1999–2000 crisis. When claims costs rose, insurers could not respond immediately — US rate increases require regulatory approval, meaning companies were locked into yesterday's prices while paying today's costs. Recovery began in 2001 as rate increases were approved and underwriting standards tightened, but the full correction only came through in 2004 when revised rates had been earned across the entire book. The sustained surplus from 2004 to 2007 represents a well-functioning market at adequate rates — and illustrates why annual actuarial rate reviews matter. It took five years to recover from two years of underpricing.
+
+## Finding 13 — expense loading reveals true scale of affordability crisis
+
+**What the data shows:**
+When operating expenses (28.5% of premium) are added to paid claims,
+the affordability picture changes dramatically:
+- 14 insurers (13.9%) — Severe Deficit: combined ratio over 110%
+- 16 insurers (15.8%) — Deficit: combined ratio 100% to 110%
+- 12 insurers (11.9%) — At Risk: combined ratio 95% to 100%
+- 36 insurers (35.6%) — Watch: combined ratio 85% to 95%
+- 23 insurers (22.8%) — Solvent: combined ratio below 85%
+
+Old American Cty Mut Fire Ins Co has the worst combined ratio at 169.2%.
+Only 23 of 101 insurers — fewer than 1 in 4 — are genuinely solvent
+when both claims and operating expenses are accounted for.
+
+**Assumptions used:**
+Solvency thresholds are based on the combined ratio — total claims plus
+expenses divided by earned premium — using the following scale:
+
+- Over 110% — Severe Deficit: capital is actively being destroyed
+- 100% to 110% — Deficit: outflows exceed inflows, unsustainable
+  without investment income
+- 95% to 100% — At Risk: no safety margin, one bad year tips into
+  deficit. Reflects the industry standard 4–5% target profit margin
+- 85% to 95% — Watch: funded but below comfortable levels. AM Best
+  uses 85% as a watch threshold for adverse condition resilience
+- Below 85% — Solvent: adequate margin above claims and expenses
+
+The 28.5% expense ratio assumption is documented in the data dictionary.
+These thresholds are consistent with frameworks used in CAS Exam 5
+ratemaking and AM Best financial strength rating methodology.
+
+**What it means:**
+The EDA scorecard without expenses showed only 2 companies in deficit.
+Adding the expense load reveals 30 companies in deficit or severe
+deficit. This is the critical difference between a loss ratio and a
+combined ratio — claims alone do not tell the full story of whether
+a company can fund its obligations.
+
+**Actuarial implication:**
+A combined ratio below 100% is the minimum threshold for underwriting
+profitability. Of the 101 insurers, 77 — more than three quarters —
+have a combined ratio above 85%, meaning they have limited or no buffer
+against adverse claims development. Only Pioneer State Mut (79.4%),
+Pacific Specialty (70.4%), and a handful of others operate with a
+genuinely comfortable margin.
