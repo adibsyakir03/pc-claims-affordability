@@ -1,0 +1,4 @@
+cd C:\Users\User\Documents\pc-claims-affordability
+git add .
+git commit -m "docs: add finding 2 - top 10 insurer performance spread"
+git push

@@ -539,3 +539,52 @@ than extrapolating purely from sparse early data. The fact that
 both methods flag 1998–2000 as inadequate — using different
 mathematical approaches — makes this one of the strongest
 findings in the project.
+
+## Finding 20 — rate adequacy: 6 of 10 years required rate increases
+
+**What the data shows:**
+Applying the CAS Exam 5 loss ratio method with a permissible loss
+ratio of 64.5%, six of ten accident years required rate increases:
+
+- AY2000: +21.1% indicated — the largest required increase
+- AY1999: +12.9% indicated
+- AY2002: +8.4% indicated
+- AY2003: +4.8% indicated
+- AY2001: +5.5% indicated
+- AY1998: +2.9% indicated
+
+The combined dollar rate gap across all six years totalled
+approximately $414 million. Only AY2004–2007 were adequately priced.
+
+At the insurer level, Old American Cty Mut Fire Ins Co required
+the largest rate increase — its 140.7% incurred loss ratio implies
+an indicated change of over 100%. New Jersey Citizens United and
+IFA Ins Co follow at 108.6% and 98.2% respectively.
+
+**Assumptions used:**
+- Fixed expense ratio (FER): 16.0%
+- Variable expense ratio (VER): 12.5%
+- Target profit margin: 5.0%
+- Investment income offset: 2.0%
+- Permissible loss ratio: 64.5% = 1 - VER - PM - INV - FER
+- Formula: Indicated Change = [(Proj LR + FER) /
+  (1 - VER - PM - INV)] - 1
+
+These assumptions are consistent with US private passenger auto
+industry benchmarks and CAS Exam 5 ratemaking methodology.
+
+**What it means:**
+The 2000 indicated rate increase of +21.1% means premiums would
+have needed to be 21% higher to achieve the target profit margin.
+The fact that only four years were adequately priced confirms the
+core finding of this project — the US private passenger auto market
+was systematically underpriced for the majority of the study period.
+
+**Actuarial implication:**
+This is the standard output of a P&C rate filing. An actuary
+presenting these results to management would recommend an immediate
+double-digit rate increase for the 1999 and 2000 books, with
+moderate increases across 2001–2003. The sensitivity analysis
+in Script 4 shows that even under optimistic assumptions — lower
+expenses, lower target margin — the 1999 and 2000 books still
+require significant rate increases.
