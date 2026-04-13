@@ -92,7 +92,7 @@ desktop.ini
 # ------------------------------------------------------------
 # Output files (charts saved locally, not committed)
 # ------------------------------------------------------------
-outputs/charts/*.png
+## Outputs/charts/*.png
 outputs/charts/*.pdf
 outputs/charts/*.svg
 
