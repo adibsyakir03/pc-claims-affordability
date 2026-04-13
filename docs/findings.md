@@ -588,3 +588,153 @@ moderate increases across 2001–2003. The sensitivity analysis
 in Script 4 shows that even under optimistic assumptions — lower
 expenses, lower target margin — the 1999 and 2000 books still
 require significant rate increases.
+
+---
+
+## Chart catalogue
+
+### R charts
+
+**01_loss_triangle_heatmap.png**
+Heatmap of the industry paid loss triangle. Rows are accident years
+(1998–2007), columns are development lags (1–10). Darker blue cells
+indicate higher cumulative paid losses. The diagonal pattern confirms
+that later accident years have fewer completed lags — AY2007 only has
+lag 1 data while AY1998 has all 10 lags fully developed.
+
+**02_development_curves.png**
+Line chart showing cumulative paid losses over 10 development lags for
+each accident year. All curves follow a similar shape — steep early
+growth flattening toward ultimate. AY2002 and AY2005 sit higher than
+surrounding years, consistent with the crisis years identified in the
+affordability analysis.
+
+**03_chainladder_ultimate.png**
+Side-by-side bars comparing paid-to-date vs chain-ladder projected
+ultimate for each accident year. Because the triangle is fully
+developed at lag 10, the two bars are equal — confirming the
+chain-ladder result of zero IBNR for a run-off book.
+
+**04_bf_ibnr.png**
+Bornhuetter-Ferguson IBNR estimates by accident year, coloured by
+reserve adequacy. Red bars (1998–2000) indicate inadequate reserves —
+BF projects more ultimate losses than premium can fund. Green bars
+(2001–2004) indicate adequate reserves. Confirms the 1999–2000 crisis
+from an independent actuarial method.
+
+**05_cl_vs_bf.png**
+Comparison of chain-ladder vs Bornhuetter-Ferguson IBNR estimates.
+BF produces more conservative estimates for immature years (lower %
+developed) because it blends actual development with expected losses
+rather than extrapolating purely from sparse early data.
+
+**06_indicated_rate_change.png**
+Indicated rate change by accident year from the CAS Exam 5 loss ratio
+method. Red bars show years requiring rate increases — up to +21.1%
+in AY2000. Green bars show years where rates were over-adequate.
+Only AY2004–2007 show negative indications confirming the market
+had corrected by that point.
+
+**07_lr_vs_permissible.png**
+Paid loss ratio bars versus the permissible loss ratio threshold of
+64.5% shown as a dashed red line. Any bar above the line required a
+rate increase. Six of ten years exceed the threshold confirming
+systematic underpricing throughout most of the study period.
+
+**08_sensitivity_tornado.png**
+Tornado chart from R showing how the rate indication changes under
+different assumptions. The loss ratio assumption has the largest
+impact — a 5pp increase adds approximately 6pp to the indication.
+Expense ratio changes have a smaller but material effect.
+
+---
+
+### Python charts
+
+**py01_loss_ratio_trend.png**
+Bar chart of industry paid loss ratio by accident year. Red bars
+exceed the permissible threshold of 64.5%. The chart clearly shows
+the 1999–2000 crisis period and the sustained recovery from 2004.
+Value labels on each bar make the exact ratios immediately readable.
+
+**py02_funding_surplus_deficit.png**
+Dollar value of the industry funding surplus or deficit by year after
+applying the 28.5% expense load. Red bars in 1999 and 2000 show the
+industry collectively paid out more than it collected. The 2002 near-
+miss at +$10M is clearly visible — a razor-thin margin on $837M of
+premium.
+
+**py03_development_curve.png**
+Development curve showing the percentage of ultimate losses paid at
+each lag, with shaded areas for paid (green) and unpaid/IBNR (red)
+portions. The steep jump from lag 1 (38%) to lag 2 (70%) is the most
+important feature — illustrating why IBNR reserves are critical in
+the first year of development.
+
+**py04_solvency_donut.png**
+Donut chart showing the distribution of 101 insurers by solvency
+status. The centre shows the total insurer count. The dominance of
+red and amber segments — representing deficit and at-risk companies —
+visually reinforces that fewer than 1 in 4 insurers are genuinely
+solvent when expenses are included.
+
+**py05_combined_ratio_distribution.png**
+Histogram of combined ratios across all 101 insurers. The red dashed
+line at 100% separates loss-making from profitable companies. The long
+right tail shows a small number of severely distressed insurers with
+combined ratios well above 150%. The mean line sits above 95%
+confirming the market-wide stress.
+
+**py06_link_ratios.png**
+Bar chart of volume-weighted chain-ladder link ratios by development
+lag transition. The dramatic height of the lag 1→2 bar (1.8289) versus
+the near-flat bars from lag 5 onwards illustrates the classic front-
+loaded development pattern of private passenger auto insurance.
+
+**py07_top15_combined_ratio.png**
+Horizontal bar chart of the 15 insurers with the highest combined
+ratios. All bars are red — every company in this group has a combined
+ratio above 100%, meaning all are loss-making. Old American Cty Mut
+Fire Ins Co leads at 169.2%, followed by New Jersey Citizens United
+at 137.1%.
+
+**py08_indicated_rate_change.png**
+Indicated rate change by accident year with positive values in red
+and negative in green. The +21.1% bar for AY2000 is the standout —
+the largest rate increase required in the dataset. The transition to
+negative indications from AY2004 confirms the market correction.
+
+**py09_affordability_dashboard.png**
+Six-panel summary dashboard combining all key analyses in one figure.
+Designed as a single-page executive summary — the kind of output
+presented to a Chief Actuary or CFO. Panels show loss ratio trend,
+funding surplus/deficit, solvency donut, development curve, rate
+change, and a key metrics table.
+
+**py10_industry_stress_test.png**
+Side-by-side bars comparing base case vs +15% severity stress surplus
+for each accident year. The stressed bars (right of each pair) are
+predominantly red, showing that only AY2004 survives the stress test.
+The gap between base and stressed bars widens in later years as
+premium volume grows.
+
+**py11_insurer_stress_results.png**
+Horizontal bar chart showing the three stress test outcome categories.
+The roughly equal split between the three groups — fails both, passes
+base only, passes both — illustrates that the market sits at a
+tipping point where a moderate severity shock tips the majority into
+deficit.
+
+**py12_sensitivity_tornado.png**
+Tornado chart from Python showing the sensitivity of the rate
+indication to each assumption. Longer bars indicate more influential
+assumptions. The loss ratio assumptions dominate, confirming that
+claims experience is the primary driver of rate adequacy — not
+expense management.
+
+**py13_premium_waterfall.png**
+Waterfall chart for AY2007 showing how $1,016M of earned premium is
+consumed. The three bars show claims paid ($645M), operating expenses
+($289M), and the remaining underwriting surplus ($81M). This chart
+makes the affordability equation visually intuitive — premium in,
+claims and expenses out, surplus what remains.
