@@ -114,7 +114,23 @@ pc-claims-affordability/
 
 ## Key findings
 
-> *(To be completed after analysis — Section 5 of the project)*
+| # | Finding | Key number |
+|---|---|---|
+| 1 | Industry loss ratio peaked in 2000 | 81.2% — highest in dataset |
+| 2 | Two genuine industry-wide crisis years | 1999 and 2000 underfunded |
+| 3 | Peak funding deficit | -$66M in AY2000 |
+| 4 | 30 insurers loss-making on combined ratio basis | 29.7% of market |
+| 5 | Only 21 insurers genuinely solvent | 20.8% of market |
+| 6 | Six of ten years required rate increases | Up to +21.1% in AY2000 |
+| 7 | BF method independently confirms 1998–2000 inadequacy | Total IBNR $590M |
+| 8 | Only 35 insurers pass the +15% stress test | 34.7% of market |
+| 9 | Lag 1→2 link ratio of 1.83 | Claims nearly double in year 2 |
+| 10 | Old American Cty Mut at 169.2% combined ratio | Most distressed insurer |
+
+The core conclusion: **the US private passenger auto market was systematically underpriced
+for the majority of 1998–2007**. Premium intake was insufficient to fund claims and expenses
+in 1999 and 2000, and only marginally adequate in 2002. Annual actuarial rate reviews and
+reserve monitoring would have detected — and potentially prevented — the crisis.
 
 ---
 
@@ -175,8 +191,7 @@ the standard benchmark dataset for loss reserving studies.
 
 **Adib Syakir**  
 Aspiring Actuarial Analyst  
-www.linkedin.com/in/
-adib-syakir-b05605336
+www.linkedin.com/in/adib-syakir-b05605336
  | adibsyakir03@gmail.com
 
 ---
