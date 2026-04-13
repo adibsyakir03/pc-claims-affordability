@@ -134,6 +134,28 @@ reserve monitoring would have detected — and potentially prevented — the cri
 
 ---
 
+## Charts
+
+### Industry loss ratio trend
+![Loss ratio trend](outputs/charts/py01_loss_ratio_trend.png)
+
+### Funding surplus and deficit
+![Funding surplus deficit](outputs/charts/py02_funding_surplus_deficit.png)
+
+### Affordability dashboard
+![Affordability dashboard](outputs/charts/py09_affordability_dashboard.png)
+
+### Insurer solvency distribution
+![Solvency donut](outputs/charts/py04_solvency_donut.png)
+
+### Stress test results
+![Stress test](outputs/charts/py11_insurer_stress_results.png)
+
+### Indicated rate change
+![Rate change](outputs/charts/py08_indicated_rate_change.png)
+
+---
+
 ## How to reproduce
 
 ### 1. Clone the repo
